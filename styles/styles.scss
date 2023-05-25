@@ -1,0 +1,197 @@
+// THE NAVBAR
+@import "./colors";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $text-color;
+}
+
+.container-fluid {
+  color: $text-color;
+  .navbar {
+    // margin-bottom: 2rem;
+    float: right;
+  }
+  .hero {
+    // gap: 2rem;
+    margin-top: 7rem;
+
+    .aboutme {
+      * {
+        margin-bottom: 2rem;
+      }
+      width: 500px;
+      a {
+        border-radius: 2px;
+        background-color: $button-color;
+        padding: 1rem 1.8rem;
+        color: $white;
+        text-decoration: none;
+      }
+    }
+    .myPic {
+      img {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+  .recent-posts {
+    margin-top: 5rem;
+    background-color: $recent-background;
+    padding: 1.2rem 2rem;
+
+    .postcards {
+      gap: 2rem;
+      .card {
+        width: 508px;
+      }
+    }
+  }
+  .featured {
+    width: 89%;
+    margin: auto;
+    .works {
+      gap: 1rem;
+      height: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      .picture {
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      .work {
+        .work-title {
+          padding-bottom: 1rem;
+        }
+        height: 100%;
+        span {
+          year {
+            background-color: $text-background;
+          }
+        }
+      }
+      hr {
+        color: $text-color;
+        opacity: 0.4;
+        height: 1rem;
+        width: 100%;
+      }
+    }
+  }
+  .footer {
+    margin-top: 10rem;
+    color: inherit;
+    .copy {
+      width: fit-content;
+    }
+  }
+}
+
+// BLOG HTML PAGE
+.blog {
+  .interactions {
+    margin-top: 2rem;
+    * {
+      margin-bottom: 1rem;
+    }
+  }
+  .blog-content {
+    width: 70vw;
+  }
+}
+.activa {
+  color: red;
+}
+.greyed {
+  color: $greyed;
+}
+.works-featured {
+  width: 70vw;
+  margin: auto;
+}
+// DASHBOARD DETAIL HTML PAGE
+.dashLink {
+  text-decoration: none;
+  color: inherit;
+}
+.work-dashboard {
+  width: 70vw;
+  .dash {
+    * {
+      margin-bottom: 1rem;
+    }
+    .dash-info {
+      .year {
+        background-color: $button-color;
+      }
+    }
+    .dashboard-paragraph {
+      width: 80%;
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  .container-fluid {
+    .hero {
+      .aboutme {
+        width: 300px;
+      }
+    }
+    .recent-posts {
+      .postcards {
+        .card {
+          width: 100%;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .featured {
+      .works {
+        height: fit-content;
+        width: 90%;
+        * {
+          margin-bottom: 1.5rem;
+        }
+        .work {
+          height: 100%;
+        }
+        .picture {
+          width: 100%;
+          margin: auto;
+          img {
+            margin: auto;
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+  .blog {
+    .blog-content {
+      width: 90vw;
+    }
+  }
+  .works-featured {
+    width: 90vw;
+  }
+  .work-dashboard {
+    width: 80vh;
+    margin: auto;
+    .dash {
+      .dashboard-paragraph {
+        width: 90%;
+      }
+    }
+  }
+}
